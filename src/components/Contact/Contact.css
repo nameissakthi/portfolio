@@ -1,0 +1,225 @@
+.contact_main{
+    height: 80vh;
+    margin: 50px 0px;
+}
+.contact_main>p span{
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(rgb(2, 0, 99), rgba(203, 239, 42, 0.879), rgb(54, 19, 232));
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 700;
+}
+.contact_main>p{
+    font-size: xx-large;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact .contact_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .contact_left>* {
+    margin-bottom: 30px;
+}
+
+.contact .contact_left>h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.contact .contact_mail_box {
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 1px 1px 5px 0px rgb(139, 139, 222);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .contact_mail_box h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contact .contact_mail_box h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contact .contact_mail_box a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.contact .button {
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition-duration: .2s;
+    font-weight: 520;
+    font-size: 1.2rem;
+}
+
+.contact .arrow {
+    width: 20px;
+    display: inline;
+
+}
+
+.contact .button:hover {
+    transition-duration: .2s;
+}
+
+.contact .button:hover .arrow {
+    animation: slide-right .6s ease-out both;
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.contact .button:active {
+    transform: translate(1px, 1px);
+    transition-duration: .2s;
+}
+
+.contact .contact_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact_main .contact .contact_right .contact__form{
+    width: 400px;
+}
+.contact_main .contact .contact_left .contact_mail_box{
+    width: 300px;
+    height: 200px;
+}
+
+.contact .contact_right form {
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 1px 1px 5px 0px rgb(139, 139, 222);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .contact_right form input {
+    width: 100%;
+    height: 40px;
+    padding: 0.4rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.contact .contact_right form textarea {
+    width: 100%;
+    padding: 0.4rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.contact .contact_right>h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.contact .contact_right>* {
+    margin-bottom: 30px;
+}
+
+.contact .form_btn {
+    --bg: #4b79ed;
+    --hover-bg: #422aad;
+    --hover-text: #fff;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+
+.contact .form_btn:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.contact .form_btn:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+@media(max-width:800px){
+    .contact_main{
+        height: 130vh;
+    }
+    .contact_main .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact_main .contact .contact_right{
+        width: 100%;
+    }
+    .contact_main .contact .contact_right .contact__form{
+        width: 60%;
+    }
+}
+@media(max-width:500px){
+    .contact_main>p{
+        font-size: 2rem;
+    }
+    .contact .contact_left>h1 {
+        font-size: 1.5rem;
+    }
+    .contact .contact_right>h1 {
+        font-size: 1.5rem;
+    }
+    .contact_main{
+        height: 130vh;
+    }
+    .contact_main .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact_main .contact .contact_right .contact__form{
+        width: 90%;
+    }
+    .contact_main .contact .contact_left .contact_mail_box{
+        width: 100%;
+        height: 200px;
+    }
+}

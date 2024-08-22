@@ -1,0 +1,35 @@
+.sidebar{
+    background: rgba(211, 137, 201, 0.5);
+    width: 60vw;
+    position: absolute;
+    right: 0%;
+    z-index: 1000;
+    border-radius: 0px 0px 0px 16px;
+    display: none;
+  }
+.sidebar .menulinks{
+    width: 100%;
+}
+.sidebar .menulinks ul{
+    list-style: none;
+
+}
+.sidebar .menulinks ul li{
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+.sidebar .menulinks ul li button{
+    background-color: inherit;
+    border: none;
+}
+.sidebar .menulinks ul li a{
+    text-decoration: none;
+    color: white;
+}
+.sidebar .menulinks ul li:hover{
+    background-color: rgba(211, 137, 201, 0.4);
+}
+.sidebar .menulinks ul li:active{
+    background-color: rgba(211, 137, 201, 0.6);
+}

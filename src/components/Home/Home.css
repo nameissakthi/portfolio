@@ -1,0 +1,131 @@
+.home{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home .card {
+    background-color: #011522;
+    border-radius: 8px;
+    width: 50vw;
+    height: 50vh;
+    z-index: 1;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px 0px rgb(139, 139, 222);
+}
+
+.home .tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.home .circle {
+    padding: 0 4px;
+}
+
+.home .box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.home .red {
+    background-color: #ff605c;
+}
+
+.home .yellow {
+    background-color: #ffbd44;
+}
+
+.home .green {
+    background-color: #00ca4e;
+}
+.home .card .card__content *{
+    margin: 1% 0%;
+    padding: 10px;
+}
+.home .card h1{
+    font-size: 3.5rem;
+}
+.home .card h2{
+    font-size: 2.5rem;
+}
+.home .card h2 span{
+    color: rgb(137, 180, 218);
+}
+.home .card p{
+    font-size: 1.5rem;
+}
+.home .card p span{
+    font-weight: 700;
+}
+.home .home_resume{
+    width: fit-content;
+    color: rgb(218, 203, 203);
+    border: 1px solid rgb(218, 203, 203);
+    font-weight: 550;
+}
+.home .home_resume a{
+    text-decoration: none;
+    color: inherit;
+}
+.home .home_resume:hover{
+    background-color: white;
+    color: black;
+}
+.home .home_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .home_right div{
+    width: 80%;
+}
+@media(max-width:1024px){
+    .home{
+        height: 120vh;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .home .card h1{
+        font-size: 3rem;
+    }
+    .home .card h2{
+        font-size: 2.2rem;
+    }
+    .home .card h2 span{
+        color: rgb(137, 180, 218);
+    }
+    .home .card p{
+        font-size: 1.3rem;
+    }
+    .home .card p span{
+        font-weight: 700;
+    }
+}
+@media(max-width:800px){
+    .home .card {
+        width: 80vw;
+        height: 50vh;
+    }
+    .home .card h1{
+        font-size: 2.7rem;
+    }
+    .home .card h2{
+        font-size: 2rem;
+    }
+    .home .card h2 span{
+        color: rgb(137, 180, 218);
+    }
+    .home .card p{
+        font-size: 1.1rem;
+    }
+    .home .card p span{
+        font-weight: 700;
+    }
+}

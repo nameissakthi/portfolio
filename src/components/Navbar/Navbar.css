@@ -1,0 +1,124 @@
+nav {
+    padding: 1rem;
+    background-color: rgba(1, 14, 100, 0.426);
+}
+
+nav .logo {
+    height: 50px;
+    width: 65px;
+}
+
+nav .logo img {
+    height: inherit;
+    width: inherit;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .menulinks ul {
+    width: 50vh;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .menulinks ul li {
+    color: white;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+nav .menulinks ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav .hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+nav .hamburger input {
+    display: none;
+}
+
+nav .hamburger svg {
+    height: 3em;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+nav .line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+nav .line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+nav .hamburger input:checked+svg {
+    transform: rotate(-45deg);
+}
+
+nav .hamburger input:checked+svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+
+nav button {
+    font-size: 0.9rem;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+nav button:focus,
+nav button:hover {
+    color: #fff;
+}
+
+nav button:focus:after,
+nav button:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+nav button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(178, 219, 215);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+@media(max-width:500px) {
+    nav .menulinks {
+        display: none;
+    }
+
+    nav .hamburger {
+        display: block;
+    }
+}

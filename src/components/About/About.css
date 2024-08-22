@@ -1,0 +1,126 @@
+.about>h1{
+    font-size: 2rem;
+}
+.about>p{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.about>p span{
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(rgb(2, 0, 99), rgba(203, 239, 42, 0.879), rgb(54, 19, 232));
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 700;
+}
+.about_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about_container .about_right h1{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.about .card {
+    background-color: #011522;
+    border-radius: 8px;
+    width: 35vw;
+    z-index: 1;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px 0px rgb(139, 139, 222);
+}
+
+.about .tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.about .circle {
+    padding: 0 4px;
+}
+
+.about .box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.about .red {
+    background-color: #ff605c;
+}
+
+.about .yellow {
+    background-color: #ffbd44;
+}
+
+.about .green {
+    background-color: #00ca4e;
+}
+.about .card .card__content *{
+    margin: 5% 0%;
+    padding: 10px;
+}
+.about .card p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.about>p{
+    font-size: xx-large;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin: 50px 0px;
+}
+.about .about_container .about_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.about .about_container .about_left img{
+    width: 70%;
+}
+@media(max-width:1024px){
+    .about .card {
+        width: 40vw;
+    }
+}
+@media(max-width:800px){
+    .about .about_container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about>p{
+        margin: 50px 0px;
+    }
+    .about .about_left img{
+        margin-bottom: 50px;
+    }
+    .about .card {
+        width: 70vw;
+        padding: 0.8rem;
+    }
+    .about .about_container .about_left{
+        width: 90%;
+    }
+}
+@media(max-width:500px){
+    .about .card {
+        width: 80vw;
+        padding: 0.6rem;
+    }
+    .about .card p{
+        font-size: 1rem;
+    }
+    .about>p{
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .about .card__content h1{
+        font-size: larger;
+    }
+}
