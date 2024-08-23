@@ -92,6 +92,9 @@
         flex-direction: column-reverse;
         align-items: center;
     }
+    .home .card{
+        width: 75vw;
+    }
     .home .card h1{
         font-size: 3rem;
     }
@@ -106,6 +109,9 @@
     }
     .home .card p span{
         font-weight: 700;
+    }
+    .home .home_right div{
+        width: 85%;
     }
 }
 @media(max-width:800px){

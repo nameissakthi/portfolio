@@ -16,6 +16,7 @@ nav .logo img {
 nav {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 nav .menulinks ul {
@@ -113,7 +114,7 @@ nav button:after {
     transition-property: width, left;
 }
 
-@media(max-width:500px) {
+@media(max-width:700px) {
     nav .menulinks {
         display: none;
     }
